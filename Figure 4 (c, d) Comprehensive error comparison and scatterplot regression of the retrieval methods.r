@@ -17,7 +17,7 @@ p4c <- ggplot(df_mean_rmse, aes(x = Method, y = Mean_RMSE, fill = Method)) +
   annotate("text", x = 1, y = 0.38, label = "One-way ANOVA\np < 0.05", size = 4, hjust = 0)
 
 # --- 图4(d): 观测值 vs 估算值 散点图 ---
-# 生成模拟验证样本点 (需替换为你提炼的300个验证样本数据)
+# 生成模拟验证样本点 (300个验证样本数据)
 set.seed(42)
 obs_fvc <- runif(150, 0, 1)
 df_scatter <- data.frame(
@@ -43,4 +43,4 @@ p4d <- ggplot(df_scatter, aes(x = Observed, y = Estimated, color = Method, shape
   annotate("text", x = 0, y = 0.81, label = "PDM: y = 0.75x + 0.09 ***, R^2 = 0.40", hjust = 0, size = 3.5) +
   theme(legend.position = "bottom", panel.grid = element_blank())
 
-print(p4d)
+print()

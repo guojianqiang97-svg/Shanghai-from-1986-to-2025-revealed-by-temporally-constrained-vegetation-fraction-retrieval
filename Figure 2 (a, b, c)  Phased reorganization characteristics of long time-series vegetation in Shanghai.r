@@ -6,7 +6,7 @@ library(gridExtra)
 df_endpoint <- data.frame(
   Indicator = rep(c("NDVI", "FVC"), each = 2),
   Year = rep(c("1986", "2025"), times = 2),
-  Value = c(0.50, 0.61, 0.49, 0.59) # 基于论文原文提取
+  Value = c(0.50, 0.61, 0.49, 0.59) 
 )
 
 p2a <- ggplot(df_endpoint, aes(x = Indicator, y = Value, fill = Year)) +

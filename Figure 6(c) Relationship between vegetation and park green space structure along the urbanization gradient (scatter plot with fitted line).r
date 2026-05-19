@@ -28,4 +28,4 @@ p_scatter <- ggplot(df_table3, aes(x = Park_Ratio, y = Veg_Proxy)) +
         axis.title = element_text(size = 14)) +
   annotate("text", x = 60, y = 18, label = "r = -0.335\np = 0.204", size = 4)
 
-print(p_scatter)
+print(  )
