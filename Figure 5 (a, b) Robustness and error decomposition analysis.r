@@ -19,7 +19,7 @@ p5a <- ggplot(bootstrap_rmse, aes(x = Group, y = RMSE, fill = Group)) +
 
 # --- 图5(b): MAE 与 Bias 的热力图误差分解 ---
 library(reshape2)
-# 基于手稿文本构建 Bias 与 MAE 数据
+# 基于构建 Bias 与 MAE 数据
 df_bias <- data.frame(
   Method = factor(c("TMA", "SMA", "PDM"), levels = c("PDM", "SMA", "TMA")),
   Low = c(0.016, 0.013, 0.036),
@@ -36,4 +36,4 @@ p5b_bias <- ggplot(df_bias_melt, aes(x = Coverage, y = Method, fill = Bias)) +
   labs(title = "Mean signed error (bias)", x = "Coverage class", y = "Method") +
   theme(panel.grid = element_blank())
 
-print(p5b_bias)
+print( )

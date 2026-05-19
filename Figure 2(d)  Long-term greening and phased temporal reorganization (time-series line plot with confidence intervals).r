@@ -1,4 +1,4 @@
-# 构建模拟的时序数据结构 (你需要用GEE导出的实际年度FVC数据替换)
+# 构建模拟的时序数据结构
 set.seed(123)
 years <- 1986:2025
 mean_fvc <- seq(0.49, 0.59, length.out = length(years)) + sin(seq(0, 2*pi, length.out = length(years))) * 0.05

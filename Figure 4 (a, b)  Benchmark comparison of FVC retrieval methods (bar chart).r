@@ -20,7 +20,7 @@ p_rmse <- ggplot(df_table2, aes(x = Coverage, y = RMSE, fill = Method)) +
   # 假设的误差线（标准差），你需要替换为实际数据的SD
   geom_errorbar(aes(ymin = RMSE - 0.02, ymax = RMSE + 0.02), 
                 position = position_dodge(width = 0.8), width = 0.2) +
-  scale_fill_manual(values = c("#1F4E79", "#4472C4", "#9DC3E6")) + # 还原手稿中的蓝色渐变色调
+  scale_fill_manual(values = c("#1F4E79", "#4472C4", "#9DC3E6"))
   theme_classic() +
   labs(x = "Vegetation-coverage class", y = "RMSE", fill = "") +
   theme(legend.position = "top", 
